@@ -12,7 +12,7 @@
         padding: 20px; 
         background: #121212; 
         color: #e0e0e0;
-        overflow-x: hidden; /* Prevents horizontal scrollbars as the ball moves */
+        overflow-x: hidden; 
         position: relative;
       }
       h1 { 
@@ -38,31 +38,20 @@
         position: fixed;
         top: -10%;
         left: -10%;
-        font-size: 80px; /* Adjust size of the ball here */
-        z-index: -1; /* Puts the ball behind the text */
+        font-size: 80px; 
+        z-index: -1; 
         user-select: none;
-        pointer-events: none; /* Allows clicking through the ball to links */
+        pointer-events: none; 
         animation: bounceAndRoll 12s linear infinite;
-        opacity: 0.3; /* Makes it subtle so you can still read your text */
+        opacity: 0.3; 
       }
 
-      /* Animation Path */
       @keyframes bounceAndRoll {
-        0% {
-          transform: translate(0vw, 0vh) rotate(0deg);
-        }
-        25% {
-          transform: translate(80vw, 30vh) rotate(180deg);
-        }
-        50% {
-          transform: translate(20vw, 70vh) rotate(360deg);
-        }
-        75% {
-          transform: translate(90vw, 50vh) rotate(540deg);
-        }
-        100% {
-          transform: translate(0vw, 0vh) rotate(720deg);
-        }
+        0% { transform: translate(0vw, 0vh) rotate(0deg); }
+        25% { transform: translate(80vw, 30vh) rotate(180deg); }
+        50% { transform: translate(20vw, 70vh) rotate(360deg); }
+        75% { transform: translate(90vw, 50vh) rotate(540deg); }
+        100% { transform: translate(0vw, 0vh) rotate(720deg); }
       }
     </style>
   </head>
@@ -81,10 +70,14 @@
     <h2>My Goals for This Course</h2>
     <p>To create a soccer ball</p>
  
-    <h2>My GitHub</h2>
-    <p>Check out my projects: 
-      <a href="https://github.com/fernandoc128">Fernando</a>
+    <h2>My Portfolio & Projects</h2>
+    <p>
+      Check out my code repositories: 
+      <a href="https://github.com" target="_blank">Fernando's GitHub</a>
+    </p>
+    <p>
+      View my 3D modeling projects: 
+      <a href="https://cad.onshape.com/documents/95215fab9f65e01e5e5a7dba/w/f32724075237d991fa062c27/e/248d182530e56bae973cf40e?renderMode=0" target="_blank">Interactive 3D Soccer Ball Model (Onshape)</a>
     </p>
   </body>
 </html>
-
